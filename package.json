@@ -1,0 +1,42 @@
+{
+  "name": "postcss-transform-unit",
+  "description": "A CSS post-processor that converts rem to rpx. 允许指定转换xxx单位为xxx，并允许指定任意单位及其转换函数，支持指定黑名单prop 改自插件{postcss-pxtorpx-pro}",
+  "version": "1.1.2",
+  "author": "lihh",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jasmine-node spec"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "jasmine-node": "^3.0.0",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "css",
+    "rpm",
+    "unit",
+    "pixel",
+    "px",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "dependencies": {
+    "postcss": "^7.0.27"
+  }
+}
